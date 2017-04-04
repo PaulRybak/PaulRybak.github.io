@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <title>Документ без названия</title>
+    </head>
+    <body>
+            <div id="conteinerHeder">
+      		 <div class="menuCompany">
+                 <div class="BlockMenu">
+                    <button class="c-hamburger c-hamburger--htx">
+                    <span></span>
+                    </button>
+                     <h1 class="battonLogo">center of ameracan law</h1>
+                     <div class="telNambers"></div>
+                     <div class="language"><button class="lang"></button></div>
+                 </div>
+             </div>
+       		 <div class="presentSchool">
+                    <div class="title">
+                        <div class="chicagoLaw"></div>
+                        <div class="uniqueSchool"></div>
+                        <div><a href="#" class="button8">зареєструватись</a></div>
+                        <div class="advantages"></div>
+                    </div>               
+                    
+                </div>
+       </div>
+        <div id="conteiner">
+            <div class="font">
+                <div id="globalInfo">
+                    <div class="topLeft"></div>
+                    <div class="topRight"></div>
+                    <div class="footLeft"></div>
+                    <div class="footRight"></div>
+                    <div class="Logo">
+                        <img src="img/centralLogo.png" class="centralLogo"> 
+                        <p>наш досвід</p>
+                    </div>
+                    <div class="slidersBlock"></div>
+                    <div class="cours"></div>
+                    <div class="teachers">
+                        <div class="teacher1"></div>                  
+                        <div class="teacher2"></div>                  
+                        <div class="teacher3"></div>                  
+                        <div class="teacher4"></div>                  
+                    </div>
+                    <div class="reviews">
+                        <div class="circleImg"></div>                   
+                    </div>
+                    <div class="USAdreams">
+                        <img src="img/backgroundLedy.png" class="backgroundLedy">
+                    </div>
+                    <div class="aboutUs">
+                        <div class="pressInfo"></div>
+                    </div>
+                    <div class="organizTraining"></div>
+                    <div class="teaching">
+                        <div class="redLine"></div>
+                        <div class="rulesBlue"></div>
+                        <div class="rulesRed"></div>
+                        <div class="greyLines"></div>
+                        <div class="learns"></div>
+                    </div>
+                    <div class="partners"><div class="ourContacts"></div></div>
+                    <div class="contacts"></div>
+                </div>
+                <footer class="lastBlock">
+                    <div class="socialNet"></div>
+                    <div class="footerlogo"></div>
+                </footer>
+            </div>
+        </div>
+               <script>
+   (function() {
+
+  "use strict";
+
+  var toggles = document.querySelectorAll(".c-hamburger");
+
+  for (var i = toggles.length - 1; i >= 0; i--) {
+    var toggle = toggles[i];
+    toggleHandler(toggle);
+  };
+
+  function toggleHandler(toggle) {
+    toggle.addEventListener( "click", function(e) {
+      e.preventDefault();
+      (this.classList.contains("is-active") === true) ? this.classList.remove("is-active") : this.classList.add("is-active");
+    });
+  }
+
+})();
+    </script>
+    </body>
+</html> 
