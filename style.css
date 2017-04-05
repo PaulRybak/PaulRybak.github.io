@@ -1,7 +1,6 @@
 body{
     margin: 0 auto;
 }
-
 .c-hamburger {
   display: block;
   position: relative;
@@ -23,7 +22,6 @@ body{
     background-color: rgb;
     background: rgba(255,255,255,0.000001);
 }
-
 .c-hamburger:focus {
   outline: none;
 }
@@ -36,7 +34,6 @@ body{
   height: 2px;
   background: white;
 }
-
 .c-hamburger span::before,
 .c-hamburger span::after {
   position: absolute;
@@ -47,51 +44,38 @@ body{
   background-color: #fff;
   content: "";
 }
-
 .c-hamburger span::before {
   top: -20px;
 }
-
 .c-hamburger span::after {
   bottom: -20px;
 }
-/*.c-hamburger--htx {*/
-/*  background-color: #ff3264;*/
-/*}*/
-
 .c-hamburger--htx span {
   transition: background 0s 0.3s;
 }
-
 .c-hamburger--htx span::before,
 .c-hamburger--htx span::after {
   transition-duration: 0.3s, 0.3s;
   transition-delay: 0.3s, 0s;
     
 }
-
 .c-hamburger--htx span::before {
   transition-property: top, transform;
 }
-
 .c-hamburger--htx span::after {
   transition-property: bottom, transform;
 }
-
 .c-hamburger--htx.is-active span {
   background: none;
 }
-
 .c-hamburger--htx.is-active span::before {
   top: 0;
   transform: rotate(45deg);
 }
-
 .c-hamburger--htx.is-active span::after {
   bottom: 0;
   transform: rotate(-45deg);
 }
-
 .c-hamburger--htx.is-active span::before,
 .c-hamburger--htx.is-active span::after {
   transition-delay: 0s, 0.3s;
@@ -130,9 +114,7 @@ body{
     cursor: pointer;
     display:block;
     border-radius: 3px;
-}
-
-   
+}   
 .battonLogo{
 /*    float: right;*/
     width: 220px;
@@ -148,24 +130,19 @@ body{
     font-size: 1px;
     display: inline-block;
 }
-#conteinerHeder{
-/*    height: 800px;*/
-/*    width: 1920px;*/
-	width: 100%;
-    display:block;
-    margin: 0 auto;
-}
 #conteiner{
     height: 6314px;
 /*    width: 1920px;*/
 	width: 100%;
     display: block;
     margin: 0 auto;
+    font-family: 'Exo 2', sans-serif ;
 }
 .font{
     background-image: url(img/backGround.png);
     width: 100%;
     height: 6312px;
+       
 }
 .menuCompany{
     width: 100%;
@@ -173,14 +150,23 @@ body{
     background: linear-gradient(to left, #b21924, #062374);
     position: fixed;
 }
+.m{
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to left, #b21924, #062374);
+/*    position: fixed;*/
+}
 .presentSchool{
 /*    width: 1920px;*/
     width: 100%;
-    height: 700px;
+    height: 600px;
     background-image: url(img/hederBeckground.png);
     background-repeat: no-repeat;
     margin: 0 auto;
     background-size: 100% 100%;
+/*    background-position: center center;*/
+/*    background-attachment: fixed;*/
+    background-size: cover;
 }
 .title{
     width: 960px;
@@ -190,15 +176,45 @@ body{
    
 }
 .chicagoLaw{
-    height: 293px;
+    height: 163px;
     width: 100%;
-/*    background-color: azure;*/
+    border-bottom: 1px solid WhiteSmoke; 
+    text-align: left;
+    margin-top: 20px;
+    display: inline-block;
+/*    background-color: aqua;*/
+    line-height: 2em;
+}
+.chicagoLaw h2{
+    color: white;
+    font-family: 'Exo 2', sans-serif ;
+    font-weight: 500;
+    font-size: 30px;
     
 }
+.chicagoLaw p{
+    font-style: italic;
+    font-size: 25px;
+    color: #b0adbe;
+    font-family: 'Exo 2', sans-serif ;
+}
 .uniqueSchool{
-    height: 190px;
-    width: 100%;
+    height: 240px;
+    width: 700px;
 /*    background-color: antiquewhite;*/
+    margin-top: -25px;
+    line-height: 4em;
+    color: white;
+    word-spacing: 10px;
+}
+.uniqueSchool h1{
+    font-family: 'Exo 2', sans-serif;
+    font-size: 60px;
+/*    margin-bottom: 1em;*/
+}
+.uniqueSchool h1 span{
+    font-size: 35px;
+    font-weight: 400;
 }
 a.button8 {
     display: inline-block;
@@ -209,19 +225,16 @@ a.button8 {
 /*  padding: .5em 2em;*/
     width: 310px;
     height: 70px;
-    margin: 50px 0 0 0px;
+    margin: 10px 0 0 0px;
     outline: none;
     border: 2px solid;
     border-radius: 40px;
     transition: 0.3s;
     text-align: center;
     font-size: 30px;
-    display:inline-block;
+    font-family: 'Exo 2', sans-serif ;
 } 
 a.button8:hover { background: rgb(255,255,255);
-    color: rgb(70,71,125);
-}
-a.button8:active { background: white;
     color: rgb(70,71,125);
 }
 .advantages{
@@ -229,8 +242,18 @@ a.button8:active { background: white;
     height: 126px;
     background: rgb(230,77,88);
     margin-left: 250px;
-    margin-top: 50px;
+    margin-top: 40px;
     display:inline-block;
+}
+.advantages h2{
+    font-size: 35px;
+    font-family: 'Exo 2', sans-serif ;
+    color: white;
+    text-align: center;
+    line-height: 0.3em;
+}
+.advantages h2 p{
+    font-size: 28px;
 }
 #globalInfo{
     margin: 0 auto;
@@ -246,6 +269,18 @@ a.button8:active { background: white;
     height: 683px;
 /*    display: inline-block;*/
 }
+.topLeftInfo{
+    width: 400px;
+    height: 404px;
+    margin: auto;
+    background-color: aqua;
+    margin-top: 126px;
+    margin-left: 150px;
+    display: inline-block;
+}
+.frameLeft , .frameRight{
+    margin-left: 125px;
+}
 .topRight{
     margin-top: -683px;
     margin-left: 683px;
@@ -255,12 +290,51 @@ a.button8:active { background: white;
     height: 683px;
 /*    display: inline-block;*/
 }
+.topRightInfo{
+    width: 570px;
+    height: 404px;
+    margin: auto;
+    background-color: aqua;
+    margin-top: 126px;
+    margin-left: 50px;
+    display: inline-block;
+}
 .footLeft{
     margin-left: 0px;
     background: rgb(230,77,88); 
     width: 683px;
     height: 683px;
 }
+.footLeftInfo{
+    width: 410px;
+    height: 324px;
+    margin: auto;
+    background-color: aqua;
+    margin-top: 140px;
+    margin-left: 140px;
+    display: inline-block; 
+}
+a.button7 {
+    display: inline-block;
+    color: white;
+/*    font-weight: 700;*/
+    text-decoration: none;
+/*    user-select: none;*/
+/*  padding: .5em 2em;*/
+    width: 310px;
+    height: 70px;
+    margin: 20px 0 0 180px; 
+    outline: none;
+    border: 2px solid;
+    border-radius: 40px;
+    transition: 0.3s;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Exo 2', sans-serif ;
+} 
+a.button7:hover { 
+    background: rgb(255,255,255);
+    color: rgb(70,71,125);}
 .footRight{
     margin-top: -683px;
     margin-left: 683px;
@@ -268,6 +342,7 @@ a.button8:active { background: white;
     background-image: url(img/bottomRigheBlock.png);
     width: 683px;
     height: 683px;
+
 }
 .Logo{
     width: 235px;
@@ -287,10 +362,28 @@ a.button8:active { background: white;
     background: rgba(255,255,255,0.1);
     margin: 0 auto;
 }
+.slider1{
+    width: 960px;
+    height: 400px;
+    background-color: aquamarine;
+    margin: 130px 200px;
+    display: inline-block;
+}
 .cours{
     width: 100%;
     height: 147px;
     background-color: white;
+    display:block;
+}
+.cours h2{
+    margin: auto;
+    padding-top: 50px;
+    font-size: 35px;
+    font-family: 'Exo 2', sans-serif ;
+    color:#e64d58;
+    text-align: center;
+/*/    line-height: -0.3em;*/
+/*    display:block;*/
 }
 .teachers{
     width: 100%;
@@ -306,6 +399,7 @@ a.button8:active { background: white;
     background-image: url(img/firstPhoto.png);
     background-position: 50% top;
 }
+  
 .teacher2{
     background-image: url(img/2photo.png);
     background-position: 50% top;
@@ -318,7 +412,6 @@ a.button8:active { background: white;
     background-image: url(img/4photo.png);
     background-position: 50% top;
 }
-
 .reviews{
     width: 100%;
     height:500px;
@@ -340,22 +433,66 @@ a.button8:active { background: white;
     height:500px;
     background-image: url(img/backgroundCity.png);
 }
+.titleCenter{
+    width: 660px;
+    height: 500px;
+    margin-left: 280px;
+   display: inline-block;
+    float: left;
+}
+.tooday{
+    height: 100px;
+    width: 100%;
+    text-align: left;
+    margin-top: 20px;
+    display: inline-block;
+    line-height: 0.3em;
+}
+.tooday h2{
+    color: white;
+    font-family: 'Exo 2', sans-serif ;
+    font-weight: 500;
+    font-size: 24px;
+    font-weight: 200;
+    
+}
+.DreamUSA{
+     height: 250px;
+    width: 600px;
+    margin-top: -25px;
+    line-height: 2.3em;    
+    color: white;
+    word-spacing: 10px;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 30px;
+
+}
 .backgroundLedy{
     height: 450px; 
     float: right;
-    margin-top: 50px;
+    margin-top: -450px;
     margin-right: 270px;
+/*    display: block;*/
 }
 .aboutUs{
     width: 100%;
     height:500px;
-    background: rgb(241,241,241);
+    background-image: url(img/asce.png);
 }
 .pressInfo{
     width: 500px;
     height: 500px;
     float: left;
     background-image: url(img/press.png);
+}
+.pressInfo h3{
+    margin-top: 130px;
+    text-align: center;
+    color: white;
+    font-size: 35px;
+}
+.press{
+    margin-left: 190px;
 }
 .organizTraining{
     width: 100%;
@@ -404,10 +541,23 @@ a.button8:active { background: white;
     height: 745px;
     width: 749px;
 }
-.partners{
+
+.titlePartners{
     width: 100%;
-    height:436px;
+    height: 0px;
+/*    background-color: white;*/
+    display:block;
     background: rgb(241,241,241);
+}
+.titlePartners h2{
+    margin: auto;
+    padding-top: 40px;
+    font-size: 35px;
+    font-family: 'Exo 2', sans-serif ;
+    color:#e64d58;
+    text-align: center;
+/*/    line-height: -0.3em;*/
+/*    display:block;*/
 }
 .ourContacts{
     width: 460px;
@@ -416,6 +566,12 @@ a.button8:active { background: white;
     margin-top: 400px;
     margin-left: 33%;
     display: inline-block;
+}
+.partners{
+    width: 100%;
+    height:436px;
+/*    background: rgb(241,241,241);*/
+    background-image: url(img/blockLogo.png);
 }
 .contacts{
     width: 100%;
