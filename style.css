@@ -1,5 +1,6 @@
 body{
     margin: 0 auto;
+    overflow-x:hidden;
 }
 .c-hamburger {
   display: block;
@@ -245,12 +246,13 @@ a.button8:hover { background: rgb(255,255,255);
     margin-top: 40px;
     display:inline-block;
 }
-.advantages h2{
+.advantages h2,.contacts h2{
     font-size: 35px;
     font-family: 'Exo 2', sans-serif ;
     color: white;
     text-align: center;
     line-height: 0.3em;
+
 }
 .advantages h2 p{
     font-size: 28px;
@@ -398,8 +400,7 @@ a.button7:hover {
 .teacher1{
     background-image: url(img/firstPhoto.png);
     background-position: 50% top;
-}
-  
+}  
 .teacher2{
     background-image: url(img/2photo.png);
     background-position: 50% top;
@@ -541,7 +542,6 @@ a.button7:hover {
     height: 745px;
     width: 749px;
 }
-
 .titlePartners{
     width: 100%;
     height: 0px;
@@ -577,6 +577,7 @@ a.button7:hover {
     width: 100%;
     height:509px;
     background: rgb(6,13,50);
+    margin-top: -25px;
 }
 .lastBlock{
     width: 250px;
