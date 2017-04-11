@@ -481,9 +481,84 @@ a:hover,a:active {
     background-position: right 50%;
 }
 #stistic{
-    background-color: aquamarine;
     width: 930px;
     height: 400px;
+}
+.col-4 {
+	float: left;
+}
+.squerl{
+
+	width: 200px;
+	height: 200px;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+	display: inline-block;
+    text-align: center;
+}
+.squerlL{
+
+/*    border-left: 1px solid black;*/
+  width: 200px;
+	height: 200px;
+    border-bottom: 1px solid black;
+/*    border-right: 1px solid black;*/
+	display: inline-block;
+    text-align: center;
+    
+}
+.squerlL{
+
+/*    border-left: 1px solid black;*/
+  width: 200px;
+	height: 200px;
+    border-bottom: 1px solid black;
+/*    border-right: 1px solid black;*/
+	display: inline-block;
+    text-align: center;
+}
+.squerlU{
+
+/*    border-left: 1px solid black;*/
+    width: 200px;
+	height: 200px;
+    border-right: 1px solid black;
+/*    border-right: 1px solid black;*/
+	display: inline-block;
+    text-align: center;
+}
+.squerlUL{
+
+/*    border-left: 1px solid black;*/
+    width: 200px;
+	height: 200px;
+/*    border-right: 1px solid black;*/
+/*    border-right: 1px solid black;*/
+	display: inline-block;
+    text-align: center;
+}
+.spincrement{
+    color: #e64d58;
+    font-size: 30px;
+    font-weight: 500;
+}
+.label {
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    width: 180px;
+    margin: auto;
+}
+.section {
+	width: 804px;
+    height: 400px;
+/*    background-color: beige;*/
+    margin-left: 63px;
+}
+.spincrement{
+    text-align: center;
+    margin: 0 auto;
+    font-size: 30px;
 }
 .cours{
     width: 100%;
@@ -892,11 +967,12 @@ a.button5:hover { background: rgb(255,255,255);
     color: rgb(6,13,50);
 }
 .lastBlock{
+    display: block;
     width: 250px;
     height: 340px;
 /*    background-color: antiquewhite;*/
     margin: 0 auto;
-     margin-top: 40px;
+     margin-top: 20px;
 }
 .socialNet{
     width: 210px;
@@ -927,7 +1003,113 @@ table { border-collapse:separate; border-spacing:0; }
 caption,th,td { text-align:left; font-weight:normal; }
 blockquote:before,blockquote:after,q:before,q:after { content:""; }
 blockquote,q { quotes:"" ""; }
+/**/
+#slidr {
+    width: 1366px; 
+    height: 340px;
+}
+#slidr {
+width: 1366px; 
+    height: 340px;
+margin: 0 auto; 
+}
+#slids {
+     -moz-border-radius: 0px;
+}
+.iner {width: 500%;}
+.iner:after {
+	content:'';
+	display: block;
+	height: 0;
+	clear:both;
+	}
+.pag {float:left; width: 20%;}
+.pag img {width:1366px; height: 340px;}
 
+#oveflow {overflow: hidden;}
+#slidr input {display: none;}
+
+
+#controls label {
+display: none;
+opacity: 0.3;
+cursor: pointer;
+}
+#controls label:hover {
+opacity: 0.8;
+}
+
+#slid1:checked ~ #slids .iner { margin-left:0;} 
+#slid2:checked ~ #slids .iner { margin-left:-100%;} 
+#slid3:checked ~ #slids .iner { margin-left:-200%;} 
+
+#activ {
+/*text-align: center;*/
+margin-top: -80px;
+margin-bottom: 60px;
+    margin-left: 150px;
+}
+#activ label {
+width: 20px;
+height:20px;
+background: #fff;
+display: inline-block;
+cursor: pointer;
+border-radius: 15px;
+    margin-top: -20px;
+    margin-right: 10px;
+    border: 3px solid #e64d58;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px; 
+}
+#activ label:hover {
+background: #ccc;
+}
+#slid1:checked ~ #activ label:nth-child(1),
+#slid2:checked ~ #activ label:nth-child(2),
+#slid3:checked ~ #activ label:nth-child(3) { background: #e64d58;}
+
+#slids .iner {
+transition: all 0.8s ease-in-out;
+-webkit-transition: all 0.8s ease-in-out;
+-moz-transition: all 0.8s ease-in-out;
+-ms-transition: all 0.8s ease-in-out;
+-o-transition: all 0.8s ease-in-out;
+}
+	#wrap{
+		display: none;
+		opacity: 0.8;
+		position: fixed;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		padding: 16px;
+		background-color: rgba(1, 1, 1, 0.725);
+		z-index: 100;
+		overflow: auto;
+	}
+	
+	#window{
+		width: 400px;
+		height: 400px;
+		margin: 50px auto;
+		display: none;
+		background: #fff;
+		z-index: 200;
+		position: fixed;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		padding: 16px;
+	}
+	
+	.close{
+		margin-left: 364px;
+		margin-top: 4px;
+		cursor: pointer;
+	}
 
 
 
