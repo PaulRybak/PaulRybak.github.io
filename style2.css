@@ -150,6 +150,7 @@ body{
     height: 100px;
     background: linear-gradient(to left, #b21924, #062374);
     position: fixed;
+    z-index: 9999;
 }
 .m{
     width: 100%;
