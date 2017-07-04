@@ -5,7 +5,7 @@
 	<link href="img/mountains-294111_640.png" rel="shortcut icon" type="images/x-icon" />
 	<title>Реєстрація</title>
 	<link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,700&amp;subset=cyrillic-ext" rel="stylesheet">
-	<script src="js/jquery-1.4.4.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
 	<script>
 		$(function(){
 			$('#slides').slides({
@@ -102,7 +102,7 @@
         </div>
     
     <div class="regestry">
-        <form>
+        <form action="action.php" method="post">
             		<!-- Hidden Required Fields -->
 	        <input type="hidden" name="project_name" value="Camp regestry">
 	        <input type="hidden" name="admin_email" value="bozhalyubov@gmail.com">
@@ -115,10 +115,37 @@
             <input type="text" name="Місто" id="form_telf" placeholder="Місто в якому ви проживаєте" class="tel">
             <input type="text" name="телефон" id="form_telf" placeholder="Ваш телефон"class="tel">
             <input type="text" name="E-mail" id="form_maile" placeholder="Ваш e-mail" class="maile" required>
-       
+            <hr>
+            <p>
+            <b>Де ви дізнались про табір?:</b><Br>
+            <input type="radio" name="camp" value="church" class="input_check"> В церкві<Br>
+            <input type="radio" name="camp" value="friends" class="input_check"> Від друзів<Br>
+            <input type="radio" name="camp" value="fimely" class="input_check"> Родичів<Br>
+            <input type="radio" name="camp" value="facebook" class="input_check"> Facebook<Br>
+            <input type="radio" name="camp" value="another" class="input_check"> Інше<Br>            
+            </p>
+                <hr>
+            <p>
+                <b>Чи відвідували раніше ви табори від церкви “Божа любов”</b><Br>
+                <input type="radio" name="camp_GL" value="yes" class="input_check">Так<Br>
+                <input type="radio" name="camp_GL" value="no" class="input_check">Ні<Br>
+                
+            </p>
+                <hr>
+            <p>Прізвище Ім’я і по-батькові людини, до якої слід телефонувати у випадку надзвичайних ситуацій</p>
+            <input type="text" name="телефон" id="form_telf" placeholder="І'мя і Прізвище"class="tel">
+            <input type="text" name="телефон" id="form_telf" placeholder="Номер його\її мобільного телефону"class="tel">
+                <p>Ким є для вас</p>
+            <input type="radio" name="browser" value="father/mother" class="input_check"> Батько\ мати<Br>
+            <input type="radio" name="browser" value="brother/sister" class="input_check"> Брат\ сестра<Br>
+            <input type="radio" name="browser" value="another" class="input_check"> Інше<Br> 
+                <hr>
+                <p>Я Погоджуюсь</p>
+            <input type="radio" name="agree" value="father/mother" class="input_check">Погоджуюсь не палити, не вживати алкоголю та наркотиків на час перебування в таборі та виконувати правила внутрішнього розпорядку. У випадку недотримання цих правил знаю, що мене буде відправлено додому (за власний рахунок) з попереднім інформуванням про це батьків.<Br>
+            <button class="battonReg"><p>Надіслати</p></button>
+            <img src="img/mountain_PNG30.png" width="395px" class="mounts">
         </form> 
     </div>
+    <script type="text/javascript" src="js/script_%20slider.js"></script>
 </body>
-        <script type="text/javascript" src="js/script_%20slider.js"></script>
-        <script type="text/javascript" src="js/script.js"></script>
 </html>
