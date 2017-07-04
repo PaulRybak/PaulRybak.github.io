@@ -5,8 +5,7 @@
 	<link href="img/mountains-294111_640.png" rel="shortcut icon" type="images/x-icon" />
 	<title>Реєстрація</title>
 	<link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,700&amp;subset=cyrillic-ext" rel="stylesheet">
-<!--	<script src="js/jquery-1.4.4.min.js"></script>-->
-<!--	<script src="js/slides.min.jquery.js"></script>-->
+	<script src="js/jquery-1.4.4.min.js"></script>
 	<script>
 		$(function(){
 			$('#slides').slides({
@@ -104,9 +103,11 @@
     
     <div class="regestry">
         <form>
-            <input type="hidden" name="project_name" value="Camp regestry">
-            <input type="hidden" name="admin_email" value="bozhalyubov@gmail.com">
-            <input type="hidden" name="form_subject" value="regestry">
+            		<!-- Hidden Required Fields -->
+	        <input type="hidden" name="project_name" value="Camp regestry">
+	        <input type="hidden" name="admin_email" value="bozhalyubov@gmail.com">
+		    <input type="hidden" name="form_subject" value="regestry">
+		     <!-- END Hidden Required Fields -->
             <p>Заповніть форму, і ми надамо Вам детальну інформацію та відповімо на Ваші запитання</p>
             <div class="letery"></div>
             <input type="text" name="name" id="form_names" placeholder="Ваше І'мя і Прізвище" class="names" required>
@@ -146,5 +147,6 @@
         </form> 
     </div>
 </body>
+        <script type="text/javascript" src="js/script_%20slider.js"></script>
         <script type="text/javascript" src="js/script.js"></script>
 </html>
