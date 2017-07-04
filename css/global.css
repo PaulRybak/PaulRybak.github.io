@@ -113,9 +113,6 @@ input{
 .battonReg p{
     font-size: 23px;
 }
-/*placeholder{*/
-/*    padding: 10px;*/
-/*}*/
 .names{
     margin-top: 10px;
     margin-bottom: 10px;
@@ -162,16 +159,6 @@ input{
 .mySlides{
 	text-align: center;
 	max-height: 700px;
-}
-.text{
-	color: #f2f2f2;
-    font-size: 22px;
-    padding: 8px 12px;
-    position: relative;
-    bottom: 90px;
-    width: 60%;
-    margin: auto;
-    width: 40%;
 }
 .dot{
 	cursor: pointer;
@@ -246,6 +233,7 @@ h1 span{
 }
 .logan{
     margin-left: 70%;
+    margin-top: -200px;
 }
 .fly{
     position: fixed;
