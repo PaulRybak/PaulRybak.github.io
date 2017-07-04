@@ -4,7 +4,7 @@ $method = $_SERVER['REQUEST_METHOD'];
 $c = true;
 if ( $method === 'POST' ) {
 	$project_name = trim($_POST["project_name"]);
-	$admin_email  = trim($_POST["admin_email"]);
+	$admin_email  = trim($_POST["bozhalyubov@gmail.com"]);
 	$form_subject = trim($_POST["form_subject"]);
 	foreach ( $_POST as $key => $value ) {
 		if ( $value != "" && $key != "project_name" && $key != "admin_email" && $key != "form_subject" ) {
@@ -18,7 +18,7 @@ if ( $method === 'POST' ) {
 	}
 } else if ( $method === 'GET' ) {
 	$project_name = trim($_GET["project_name"]);
-	$admin_email  = trim($_GET["admin_email"]);
+	$admin_email  = trim($_GET["bozhalyubov@gmail.com"]);
 	$form_subject = trim($_GET["form_subject"]);
 	foreach ( $_GET as $key => $value ) {
 		if ( $value != "" && $key != "project_name" && $key != "admin_email" && $key != "form_subject" ) {
