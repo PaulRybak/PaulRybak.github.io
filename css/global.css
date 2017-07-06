@@ -58,13 +58,7 @@ h1{
     margin-top: 100px;
     padding: 10px;
 }
-form p{
-    font-size: 20px;
-    padding: 5px;
-}
-form{
-    padding: 40px;
-}
+
 .regestry{
     top:10%;
     width: 395px;
@@ -80,21 +74,14 @@ form{
     margin: auto;
     line-height: 1.3;
 }
-input{
-    width: 310px;
-    height: 60px;
-    margin-top: 2px; 
-    border-radius: 7px;
-    text-align: center;
-    font-size: 18px;
-/*    color: rgba(192,192,192,0.5);*/
-}
 .battonReg{
+    font-size: 20px;
+    text-shadow: 1px 1px 2px black, 0 0 1em violet;
     top: 10px;
-    margin: auto;
+    margin: 0 auto;
     width: 320px;
     height: 60px;
-    display: inline-block;
+    display: block;
     color: white;
     text-decoration: none;
     outline: none;
@@ -107,22 +94,15 @@ input{
     padding-bottom: 5px;
     padding-left: 10px;
 }
+.button_block{
+    width: 100%;
+    margin: 0 auto;    
+}
 .mounts {
     margin-top: 3px;
 }
 .battonReg p{
     font-size: 23px;
-}
-.names{
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-.tel{
-
-    margin-bottom: 10px;
-}
-.maile{
-    margin-bottom: 100px;
 }
 .battonReg:hover { 
     background: linear-gradient(#97b2f9, #3050a6) #c0d1ff;
@@ -133,7 +113,6 @@ input{
 	max-width: 1000px;
 	position: relative;
 	margin: auto;
-
 }
 .prev, .next{
 	cursor: pointer;
@@ -189,13 +168,6 @@ input{
 	0%{opacity:0.4;}
 	100%{opacity:1;}
 }
-.input_check{
-    float: left;
-    width: 20px;
-    height: 20px;
-    border-radius: 0px;
-    font-size: 18px;
-}
 .img_block{
     border-radius: 100px;
     border: 10px double rgb(192,209,255);
@@ -204,21 +176,27 @@ input{
 }
 .info_camp,.abo_camp{
     padding: 30px 10px 30px 30px;
-/*    width: 395px;*/
-    bottom: 10px;
+    bottom: 0px;
     background-color: rgba(192,209,255,0.5);
     display: flex;
     justify-content: center;
     position:relative;
     border-radius: 10px 10px 0 0;
-    border: 4px solid rgba(192,209,255,0.8);
+    border: 1px solid rgba(192,209,255,0.8);
     color: rgba(192,209,255,0.8);
     text-align: center;
-    margin: auto;
+    margin:0 auto;
+}
+}
+.info_camp{
 }
 .info_camp h1{
     width: 100%;
-/*    background-color: aqua;*/
+}
+.info_camp{
+    background:url(../img/mountain_PNG30.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 h1 span{
     font-size: 30px;
@@ -243,6 +221,8 @@ h1 span{
 .abo_camp{
     font-size: 20px;
     display: block;
+    margin: 0 auto;
+    margin-top: 30px;
 }
 .abo_camp span{
     font-size: 30px;
