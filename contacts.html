@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Future for Child</title>
+    <?php require 'file.php'; ?>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_contacts.css">
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+<div class="container-fluid">
+<div id="green-field"></div>
+<div id="contact-field">
+<!--MENU-->
+<div class="navbar">
+<ul>
+<div id="navbar-logo"></div> 
+<li><a href="home.html">ПРО НАС</a></li>  
+<li><a href="join.html">ЯК ДОЛУЧИТИСЬ</a></li>  
+<li><a href="project.html">ПРОЕКТИ</a></li>  
+<li><a href="news.html">НОВИНИ</a></li>  
+<li id="page"><a href="contacts.html">КОНТАКТИ</a></li>  
+</ul>
+<!--
+<li id="lang"><a href="#">Укр</a></li>
+<div id="lang-arrow"></div>
+-->
+<select style="border-color: #7ab61c" id="change" onchange="window.location.href=this.options[this.selectedIndex].value">
+<option value="contacts.html" style="border-color: #7ab61c"><a href="#" id="ua">Укр</a></option>
+<option value="contacts_en.html"><a id="en">En</a></option>
+<!--<div id="lang-arrow"></div>-->
+</select>
+</div>    
+<!--FORM-->
+<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+<div class="cont-container">
+<p class="title">ЗВ'ЯЖІТЬСЯ З НАМИ</p>
+<p class="cont-text">Якщо у Вас виникли питання, заповніть форму, що знаходиться нижче, і ми обов'язково надамо Вам усю необхідну інформацію.</p>
+<!--http://lpf.maxsite.com.ua/ajax-form-->
+    
+<form>
+<div class="form">
+<div class="form-in" id="form-in-1">
+<label><input type="text" name="field[name]" placeholder="Ваше ім'я" required></label>
+<label><input type="text" name="field[phone]" placeholder="Ваш телефон" required></label>
+<label><input type="email" name="field[email]" placeholder="Ваш email" required></label>
+</div>
+<div class="form-in" id="form-in-2">
+<textarea rows="10" name="field[message]" placeholder="Ваше повідомлення"></textarea>  
+</div>
+<div class="form-send">
+<div class="form-send-in" id="form-send-1">
+<p>phone: +38 (097) 334 18 24, +38 (063) 419 22 48</p>
+<p>email: ffclviv@gmail.com</p>
+</div>
+<div class="form-send-in" id="form-send-2">
+<input type="submit" value="НАДІСЛАТИ">
+</div>    
+</div>
+</div>
+</form>
+    
+</div>
+</div>
+</div> 
+
+<!--CONTACTS-->
+<div class="contacts">
+<div class="contacts-container">
+<div class="cont1">
+<div class="cont1-in">
+<div class="cont-logo"></div>
+<div class="cont1-text">
+<p>Благодійна організація "Благодійний фонд "Центр реабілітації дитини та сім'ї "МАЙБУТНЄ ДЛЯ ДИТИНИ"</p>
+</div>
+</div>
+<div class="cont1-in">
+<p class="cont-slog">БУДУЄМО МАЙБУТНЄ ДЛЯ ДІТЕЙ СЬОГОДНІ!!!<br>БУДУЄМО МАЙБУТНЄ РАЗОМ З НАМИ!!!</p>    
+</div>
+</div>
+<div class="cont2">
+<div class="cont2-in" id="adress">
+<p class="cont-title" id="cont-title-1">КОНТАКТИ</p>
+<div class="cont-adress-block">
+<div class="cont-icons" id="adress-icon"></div>
+<p>вул.Черемшини, 4, м.Львів, Україна</p>
+</div>
+<div class="cont-icons" id="phone-icon"></div>
+<p>phone: +38 097 334 18 24</p>
+<p id="sec_phone">+38 063 419 22 48</p>
+<div class="cont-icons" id="mail-icon"></div>
+<p>email: ffclviv@gmail.com</p>
+</div>   
+<div class="cont2-in" id="category">
+<p class="cont-title" id="cont-title-2">КАТЕГОРІЇ</p>
+<p><a href="home.html">Home</a></p>
+<p><a href="join.html">How to join</a></p>
+<p><a href="project.html">Projects</a></p>
+<p><a href="news.html">News</a></p>
+<p><a href="contacts.html">Contact us</a></p>
+</div>   
+<div class="cont2-in" id="accounts">
+<p class="cont-title">РЕКВІЗИТИ ДЛЯ ПОЖЕРТВУВАНЬ</p>
+<p>№26006563118 UAH</p>
+<p>№2600956337 USD</p>
+<p>МФО 380805</p>
+<p>АТ "Райффайзен Банк АВАЛЬ"</p>
+<p>ЄДРПОУ 4117407</p>
+<p>БО БФ "Центр реабілітації дитини та сім'ї "МАЙБУТНЄ ДЛЯ ДИТИНИ"</p>
+</div>    
+</div>
+<div id="social">
+<a href="https://www.facebook.com/"><div class="soc-icons" id="facebook"></div></a>
+<a href="https://www.vk.com/"><div class="soc-icons" id="vk"></div></a>
+<a href="https://www.instagram.com/"><div class="soc-icons" id="ins"></div></a>
+</div>
+</div>
+<div class="copyright"><p>Copyright &#169; 2017</p></div>
+</div>
+
+
+</div> 
+</div>
+</body>
+</html>
